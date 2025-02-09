@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.myForm{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/bg5-l.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+
+}
+.registerForm{
+    width: 500px;
+    height: 450px;
+    background-color: rgba(141, 67, 238, 0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    display: flex;
+    border: 2px solid rgba(167, 137, 207, 0.8);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* display: none; */
+    
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    gap: 2px;
+    position: relative;
+
+    ::placeholder{
+        color: black;
+    }
+}
+.div-items{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.eyeIcon{
+    position: absolute;
+    top: 10px;
+    left: 269px;
+    font-size: 15px;
+}
+.emailIcon{
+    position: absolute;
+    right: 13px;
+    top: 10px;
+
+}
+.usernameIcon{
+    position: absolute;
+    right: 13px;
+    top: 10px;
+   
+}
+.input{
+    width: 300px;
+    padding: 10px 32px 10px 10px;
+    border: none;
+    border-bottom: 2px solid rgb(51, 50, 50) ;
+    background-color:rgba(247, 238, 238,0);
+}
+
+input:-webkit-autofill {
+    background-color:rgba(247, 238, 238,0) !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(44, 44, 44,0.1) inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.submit{
+    width: 300px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    font-size: 17px;
+    background-color: rgb(24, 7, 22);
+    color: white;
+    transition: all 0.2s ease-in;
+    &:hover{
+        background-color: rgb(50, 5, 92);
+    }
+}
+.getRegister{
+    color: rgb(39, 38, 38);
+    font-weight: bold;
+    
+    &:hover{
+        color: rgb(68, 23, 82);
+    }
+
+
+}
+.agree{
+    display: flex;
+    gap: 8px;
+    margin-right: 130px;
+    font-size: 13px;
+    color: rgb(44, 30, 59);
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+/* LOgin */
+.passIcon{
+    position: relative;
+}
+.eyeIconP{
+    position: absolute;
+    top:7px;
+   left: 273px;
+}
+
+.loginForm{
+    width: 500px;
+    height: 450px;
+    background-color: rgba(141, 67, 238, 0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    display: flex;
+    border: 2px solid rgba(167, 137, 207, 0.8);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+.inputDiv2{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+    input{
+    width: 300px;
+    padding: 10px 32px 10px 10px;
+    border: none;
+    border-bottom: 2px solid rgb(51, 50, 50) ;
+    background-color:rgba(247, 238, 238,0);
+    }
+    ::placeholder{
+        color: black;
+    }
+}
+.loginIcon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.forgetPass{
+    font-size: 14px;
+    margin-left: 170px;
+    margin-top: -6px;
+
+    &:hover{
+       color: rgb(40, 16, 63);
+    }
+}
+.getLogin{
+    color: rgb(29, 28, 28);
+    font-weight: 600;
+    transition: all 0.2s ease-in;
+    &:hover{
+        color: rgb(49, 49, 49);
+    }
+}

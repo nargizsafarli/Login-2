@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="myForm">
+        <div class="registerForm">
+            <h2>Register</h2>
+            <form class="myRegister">
+            <div class="inputDiv">
+            <div class="div-items"><input type="text" id="username" class="input" placeholder="Username" autocomplete="off">
+                <i class="fa-regular fa-user usernameIcon"></i>
+               <span id="usernameError" class="error"></span>
+            </div> 
+            <div class="div-items"><input type="text" id="email" class="input" placeholder="Email" >
+                <i class="fa-regular fa-envelope emailIcon"> </i>
+                <span id="emailError" class="error"></span>
+            </div>
+            <div class="div-items"><input type="password" class="input" id="password" placeholder="passwords"  autocomplete="off" >
+                 <p class="eyeIcon"><i class="fa-regular fa-eye-slash"></i></p>
+                <span id="passwordError" class="error"></span>
+            </div>
+           </div>
+            <div class="agree">
+               Support in terms & conditions
+            </div>
+            <button type="submit" class="submit">Register</button>
+            </form>
+            <p>Already have an account? <span class="getRegister">Login</span></p>
+        </div>
+
+
+        <div class="loginForm">
+            <h2>Login</h2>
+        <form class="myLoginForm">
+        <div class="inputDiv2">
+            <div>
+                <input type="text" placeholder="Email" id="loginEmail">
+                <i class="fa-regular fa-envelope loginIcon"></i>
+            </div>
+            <div class="passIcon">
+                <input type="password" placeholder="Password" id="loginPassword">
+                <p class="eyeIconP"><i class="fa-regular fa-eye-slash"></i></p>
+
+            </div>
+            <span id="loginError" class="error"></span>
+         </div>
+            <p class="forgetPass">Forgot Password?</p>
+            <button class="submit" type="submit">Login</button>
+          
+        </form>
+        <p>Already have an account? <span class="getLogin">Register</span></p>
+      </div>
+   </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
